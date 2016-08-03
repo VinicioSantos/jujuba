@@ -1680,7 +1680,7 @@ input,textarea {
 	height:12px;
 	margin:0 4px 20px;
 	opacity:1;
-	border:2px solid white;
+	border:2px solid grey;
 	background:transparent
 }
 .flickity-page-dots .dot.is-selected {
@@ -3337,7 +3337,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 		height:12px;
 		margin:0 4px;
 		opacity:1;
-		border:2px solid white;
+		border:2px solid grey;
 		background:transparent
 	}
 	div.mouse-container {
