@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+	 <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  	<meta charset="utf-8">
+  	<script type="text/javascript">
+  	function AtiveOverlay(){
+	var overlay = document.getElementById('overlay');
+	var specialBox = document.getElementById('specialBox');
+	overlay.style.opacity = .8;
+	if(overlay.style.display == "block"){
+		overlay.style.display = "none";
+		specialBox.style.display = "none";
+	} else {
+		overlay.style.display = "block";
+		specialBox.style.display = "block";
+	}
+}
+  	</script>
+</head>
+
+<body>
+
+	<style type="text/css">
+	/*-------------------------- CSS OVERLAY  ----------------------------*/
+	div#overlay {
+	display: none;
+	z-index: 2;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+div#specialBox {
+	display: none;
+	position: relative;
+	z-index: 3;
+	margin: 150px auto 0px auto;
+	width: 500px; 
+	height: 300px;
+	background: #FFF;
+	color: #000;
+}
+div#wrapper {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	padding-left:24px;
+}
+/*--------------------------^CSS OVERLAY^ ----------------------------*/
+
+		/* external css: flickity.css */
+
+		* { box-sizing: border-box; }
+
+		body { font-family: sans-serif; }
+
+		.carousel {
+			background: #EEE;
+		}
+
+		.carousel-cell {
+			width: 100%;
+			height: 600px;
+			margin-right: 10px;
+			border-radius: 5px;
+
+		}
+
+		/* cell number */
+		.carousel-cell:before {
+			display: block;
+			text-align: center;
+			line-height: 200px;
+			font-size: 80px;
+			color: white;
+		}
+
+		h2{
+			font-family: 'Amatic SC', cursive;
+			  color: #99258E;
+			  font-size: 50px;
+			  font-weight: bold;
+
+		}
+		p{
+			font-family: Varela Round;
+		}
+
+	</style>
+
+<!-- ***************************************************************************** HTML DO OVERLAY ***************************************************************************** -->
+
+	<div id="overlay"></div>
+<!-- End Overlay -->
+<!-- Start Special Centered Box -->
+
+<!-- **************************************************************************************************************************************************************************** -->
+
+	<h2>Videos Recentes</h2>
+	<div id="specialBox">
+  <p>Conteudo pago</p> 
+  <button onmousedown="AtiveOverlay()">Clique para comprar!</button>
+</div>
+	<div class="carousel" data-flickity>
+		<div class="carousel-cell">
+			<section class="collective has-padding" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+						</div>
+						
+						<div class="col-md-9">
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NsX6ji-dW4c" frameborder="0" allowfullscreen></iframe>
+							
+
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
+							<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							<button onmousedown="AtiveOverlay()">Close Overlay</button>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="carousel-cell">
+			<section class="collective has-padding" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+						</div>
+
+						<div class="col-md-9">
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NsX6ji-dW4c" frameborder="0" allowfullscreen></iframe>
+
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
+							<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="carousel-cell">
+			<section class="collective has-padding" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+						</div>
+
+						<div class="col-md-9">
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NsX6ji-dW4c" frameborder="0" allowfullscreen></iframe>
+
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
+							<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="carousel-cell">
+			<section class="collective has-padding" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+						</div>
+
+						<div class="col-md-9">
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NsX6ji-dW4c" frameborder="0" allowfullscreen></iframe>
+
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
+							<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="carousel-cell">
+			<section class="collective has-padding" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+						</div>
+
+						<div class="col-md-9">
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NsX6ji-dW4c" frameborder="0" allowfullscreen></iframe>
+
+							<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
+							<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+
+<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
